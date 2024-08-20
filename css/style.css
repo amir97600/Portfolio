@@ -37,7 +37,10 @@ body{
 ul{
     list-style: none;
 }
-
+form{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 /* section */
 .section{
     background: var(--bg-black-900);

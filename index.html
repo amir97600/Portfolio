@@ -492,41 +492,46 @@
                     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <!-- ===== CONTACT FORM ======= -->
-                     <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                    <div class="row">
+                        <!-- Make sure you don't change the form action-->
+                        <form action="https://api.staticforms.xyz/submit" method="post">
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="hidden" name="accessKey" value="f42a444d-3375-431c-bdd7-00d573033ff8"> 
+                                            <input type="text" class="form-control" name="name" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Email">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <input type="hidden" name="redirectTo" value="https://amir97600.github.io/Portfolio">
+                                        <input type="submit" class="btn" value="Send Message"/>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                 <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                 <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Send Message</button>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
+                        </form>
+                    </div>
                 </div>
              </section>
             <!-- ===== CONTACT SECTION END ======= -->
